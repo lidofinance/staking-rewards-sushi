@@ -82,9 +82,8 @@ To use the tools provided by this project, please pull the repository from GitHu
 git clone https://github.com/lidofinance/staking-rewards-sushi
 cd staking-rewards-sushi
 npm install
-python3 -m venv venv
-source venv/bin/activate
-pip3 install -r requirements-dev.txt
+poetry install
+poetry shell
 ```
 
 Compile the smart contracts:

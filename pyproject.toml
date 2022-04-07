@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "staking-rewards-sushi"
+version = "1.0.0"
+description = ""
+authors = ["Bogdan Kovtun <psirex48@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = []
+
+[tool.poetry.dependencies]
+python = "3.9.10"
+eth-brownie = "^1.18.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

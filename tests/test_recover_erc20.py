@@ -42,7 +42,7 @@ def test_owner_recovers_erc20_with_balance(
     assert tx.events[0].name == "Transfer"
     assert tx.events[0]["_from"] == rewards_manager
     assert tx.events[0]["_to"] == recipient
-    assert tx.events[0]["_value"] == recover_amount
+    assert tx.events[0]["_amount"] == recover_amount
 
 
 def test_owner_recovers_erc20_to_the_caller_by_default(
@@ -61,7 +61,7 @@ def test_owner_recovers_erc20_to_the_caller_by_default(
     assert tx.events[0].name == "Transfer"
     assert tx.events[0]["_from"] == rewards_manager
     assert tx.events[0]["_to"] == ape
-    assert tx.events[0]["_value"] == transfer_amount
+    assert tx.events[0]["_amount"] == transfer_amount
 
 
 def test_recover_erc20_not_enough_balance(rewards_manager, ldo_token, dao_agent, ape):
